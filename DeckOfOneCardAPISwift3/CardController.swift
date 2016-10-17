@@ -18,7 +18,7 @@ class CardController {
         //NC: Create/send request
         //NC: Wait for response
         //Here: serialize into Card instances
-        //Here" Run the completion, passing along the resulting array of Card instances
+        //Here: Run the completion, passing along the resulting array of Card instances
         
         guard let url = self.baseURL else {
             fatalError("URL optional is nil")
@@ -46,19 +46,18 @@ class CardController {
             //Serialize results into Card instances
             
             guard let responseDictionary = (try? JSONSerialization.jsonObject(with: data, options: .allowFragments)) as? [String: AnyObject],
-                let cardDictionaries = responseDictionary["cards"] as? [[String: AnyObject]]  else {
-                    //array of dicts
+                //response dictionary: the whole JSON dictionary
+                let cardDictionaries = responseDictionary["cards"] as? [[String: Any]]  else {
+                    //array of dictionaries
                     NSLog("Unable to serialize. Response: \(responseDataString)")
                     completion([])
                     return
             }
             
             let cards = cardDictionaries.flatMap({ Card(dictionary: $0)})
-            //failable init makes these for us
+            //flatmap through all, create dictionary of each
             completion(cards)
         }
     }
 }
-
-
 

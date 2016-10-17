@@ -18,15 +18,6 @@ class Card {
     let value: String
     let suit: String
     
-    //Init
-    
-    init(imageEndpoint: String, value: String, suit: String) {
-        
-        self.imageEndpoint = imageEndpoint
-        self.value = value
-        self.suit = suit
-    }
-    
     //failable init
     
     init?(dictionary: [String: Any]) {

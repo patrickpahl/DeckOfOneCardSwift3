@@ -18,6 +18,7 @@ class ViewController: UIViewController {
         
         CardController.draw(numberOfCards: 1) { (cards) in
             guard let card = cards.first else {return}
+            //Just requesting one card, so we just want the first entry in dictionary array
             
             imageController.image(forURL: card.imageEndpoint, completion: { (image) in
                 guard let image = image else {return}
@@ -27,6 +28,4 @@ class ViewController: UIViewController {
     }
     
     @IBOutlet weak var cardImageView: UIImageView!
-
 }
-
