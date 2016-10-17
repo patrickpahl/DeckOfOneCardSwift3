@@ -12,14 +12,21 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func drawCardButtonTapped(_ sender: AnyObject) {
+        
+        CardController.draw(numberOfCards: 1) { (cards) in
+            guard let card = cards.first else {return}
+            
+            imageController.image(forURL: card.imageEndpoint, completion: { (image) in
+                guard let image = image else {return}
+                self.cardImageView.image = image
+            })
+        }
     }
-
+    
+    @IBOutlet weak var cardImageView: UIImageView!
 
 }
 

@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		795E58171DB548F40087156C /* imageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795E58161DB548F40087156C /* imageController.swift */; };
 		79ED0C971DB52C9400ACFE63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79ED0C961DB52C9400ACFE63 /* AppDelegate.swift */; };
 		79ED0C991DB52C9400ACFE63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79ED0C981DB52C9400ACFE63 /* ViewController.swift */; };
 		79ED0C9C1DB52C9400ACFE63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79ED0C9A1DB52C9400ACFE63 /* Main.storyboard */; };
 		79ED0C9E1DB52C9400ACFE63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79ED0C9D1DB52C9400ACFE63 /* Assets.xcassets */; };
 		79ED0CA11DB52C9400ACFE63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79ED0C9F1DB52C9400ACFE63 /* LaunchScreen.storyboard */; };
 		79ED0CAC1DB52C9400ACFE63 /* DeckOfOneCardAPISwift3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79ED0CAB1DB52C9400ACFE63 /* DeckOfOneCardAPISwift3Tests.swift */; };
+		79ED0CB71DB52F6C00ACFE63 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79ED0CB61DB52F6C00ACFE63 /* NetworkController.swift */; };
+		79ED0CB91DB5301100ACFE63 /* CardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79ED0CB81DB5301100ACFE63 /* CardController.swift */; };
+		79ED0CBB1DB5302900ACFE63 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79ED0CBA1DB5302900ACFE63 /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		795E58161DB548F40087156C /* imageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = imageController.swift; sourceTree = "<group>"; };
 		79ED0C931DB52C9400ACFE63 /* DeckOfOneCardAPISwift3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeckOfOneCardAPISwift3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79ED0C961DB52C9400ACFE63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79ED0C981DB52C9400ACFE63 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +41,9 @@
 		79ED0CA71DB52C9400ACFE63 /* DeckOfOneCardAPISwift3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeckOfOneCardAPISwift3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79ED0CAB1DB52C9400ACFE63 /* DeckOfOneCardAPISwift3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckOfOneCardAPISwift3Tests.swift; sourceTree = "<group>"; };
 		79ED0CAD1DB52C9400ACFE63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79ED0CB61DB52F6C00ACFE63 /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
+		79ED0CB81DB5301100ACFE63 /* CardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardController.swift; sourceTree = "<group>"; };
+		79ED0CBA1DB5302900ACFE63 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +86,12 @@
 			isa = PBXGroup;
 			children = (
 				79ED0C961DB52C9400ACFE63 /* AppDelegate.swift */,
-				79ED0C981DB52C9400ACFE63 /* ViewController.swift */,
 				79ED0C9A1DB52C9400ACFE63 /* Main.storyboard */,
+				79ED0CBA1DB5302900ACFE63 /* Card.swift */,
+				79ED0CB81DB5301100ACFE63 /* CardController.swift */,
+				795E58161DB548F40087156C /* imageController.swift */,
+				79ED0C981DB52C9400ACFE63 /* ViewController.swift */,
+				79ED0CB61DB52F6C00ACFE63 /* NetworkController.swift */,
 				79ED0C9D1DB52C9400ACFE63 /* Assets.xcassets */,
 				79ED0C9F1DB52C9400ACFE63 /* LaunchScreen.storyboard */,
 				79ED0CA21DB52C9400ACFE63 /* Info.plist */,
@@ -200,7 +212,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				79ED0C991DB52C9400ACFE63 /* ViewController.swift in Sources */,
+				79ED0CB91DB5301100ACFE63 /* CardController.swift in Sources */,
+				79ED0CBB1DB5302900ACFE63 /* Card.swift in Sources */,
 				79ED0C971DB52C9400ACFE63 /* AppDelegate.swift in Sources */,
+				79ED0CB71DB52F6C00ACFE63 /* NetworkController.swift in Sources */,
+				795E58171DB548F40087156C /* imageController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +422,7 @@
 				79ED0CB21DB52C9400ACFE63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		79ED0CB31DB52C9400ACFE63 /* Build configuration list for PBXNativeTarget "DeckOfOneCardAPISwift3Tests" */ = {
 			isa = XCConfigurationList;
@@ -414,6 +431,7 @@
 				79ED0CB51DB52C9400ACFE63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
